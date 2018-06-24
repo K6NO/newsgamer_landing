@@ -1,0 +1,334 @@
+/* colors
+coral: #ff5458
+white: #fff
+red: #da1f26
+yellow: #ee8b49
+grey-lighter: #b1b1b1
+grey-light: #929292
+grey-charcoal: #383d46
+grey-dark: #1d1c30
+ */
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Abel', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  color: #1d1c30;
+  background-size: 80px 80px;
+  background-image: linear-gradient(to right, rgba(1,1,1,.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(1,1,1,.05) 1px, transparent 1px);
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover, a:active {
+  color: #b1b1b1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  color: #1d1c30;
+}
+
+h1 {
+  font-size: 6rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+button {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+section {
+  margin: 0 auto;
+}
+
+.bg-coral {
+  background-color: #ff5458;
+}
+
+nav {
+  height: 80px;
+}
+
+.navbar-brand > img {
+  max-height: 40px;
+  width: auto;
+  padding-left: 2rem; 
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: 'Rajdhani';
+  font-size: 1.8rem;
+  padding-right: 3rem;
+  color: rgba(255,255,255, .8);
+}
+
+.navbar-subscribe {
+  padding-left: 2.5rem;
+  border: 1px solid #fff;
+}
+
+.jumbo {
+  padding: 5rem 0 0;
+  margin-bottom: 10rem;
+}
+.jumbo-decoration {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    z-index: 0;
+    /* set height to pixels if you want angle to change with screen width */
+}
+
+.jumbo-description {
+  line-height: 1.5;
+  padding: 2rem 0;
+  color: #fff;
+}
+
+.learn-more {
+  background: #ff5458;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 1rem 4rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  background: #fff;
+  color: #ff5458;
+  border: 1px solid #ff5458;
+  text-decoration: none;
+}
+
+.sign-up {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #ff5458;
+  padding: 1rem 4rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sign-up:hover {
+  background: #ff5458;
+  color: #fff;
+  text-decoration: none;
+}
+
+.size-images {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.size-images-editor {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.section-description {
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+.team-card {
+  background-color: #fff;
+  margin: 5rem 1rem;
+  padding: 5rem;
+}
+
+.team-card > h2 {
+  font-weight: 400;
+}
+.team-card > p {
+  padding: 2rem 0;
+}
+
+.team-card > a > img {
+  height: 60px;
+  width: auto;
+}
+
+.coral-text {
+  color: #ff5458;
+}
+
+.subscribe-box > h2 {
+  text-align: center;
+  padding-top: 3rem;
+  color: #383d46;
+}
+
+.subscribe-box > h3 {
+  text-align: center;
+  padding: 2rem 0;
+  font-weight: 300;
+  color: #929292;
+}
+
+
+.subscribe-button {
+  background: #ff5458;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 1rem 4rem;
+  margin-bottom: 2rem;
+}
+
+.subscribe-input {
+  min-width: 250px;
+  max-width: 300px;
+  height: 5rem;
+  margin: 2rem 1rem;
+  border: 1px solid #929292;
+  color: #929292;
+  padding-left: 1rem;
+}
+
+footer {
+  background-color: #f7f7f7;
+}
+
+.footer-logo {
+  max-height: 35px;
+  padding: 0 2rem;
+}
+
+.footer-text {
+  font-size: 1.4rem;
+  color: #1d1c30;
+}
+
+@media (min-width: 992px) {
+  .container {
+      max-width: 1060px;
+  }
+}
+@media(max-width: 768px) {
+  nav {
+    height: 40px;
+  }
+  div{
+    text-align: center;
+  }
+  .navbar-brand > img {
+    margin-top: 1rem;
+    padding: .5rem;
+    max-height: 30px;
+    width: auto;
+  }
+  .navbar-nav {
+    background: #fff;
+    color: #ff5458;
+    width: 60%;
+    margin-right: -1rem;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ff5458;
+    text-align: right;  
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, .8)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+  } 
+  .jumbo {
+    background: #ff5458;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .jumbo-picture {
+    display: none;
+  }
+  .jumbo-decoration {
+    display: none;
+  }
+  .jumbo-title {
+    font-size: 4.2rem;
+  }
+  .jumbo-description {
+    font-size: 1.8rem;
+  }
+  .sign-up {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .learn-more {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .section-description {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+  .one {
+    order: 2;
+  }
+  .two {
+    order: 1;
+  }
+  .subscribe-input {
+    text-align: center;
+    padding-left: 0;
+  }
+  .team-holder {
+    padding: 0;
+  }
+  .team-card {
+    margin: 1rem auto;
+    padding: 3rem;
+  }
+  .team-title {
+    margin-top: 2rem;
+  }
+  .footer-logo {
+    max-height: 20px;
+    padding: 0;
+  }
+  .footer-logo-ng {
+    display: none;
+  }
+
+}

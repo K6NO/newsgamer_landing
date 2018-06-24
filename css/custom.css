@@ -157,6 +157,7 @@ nav {
   max-width: 400px;
   width: 100%;
   height: auto;
+  
 }
 
 .size-images-editor {
@@ -191,6 +192,10 @@ nav {
 
 .coral-text {
   color: #ff5458;
+}
+
+.subscribe-box {
+  text-align: center;
 }
 
 .subscribe-box > h2 {
@@ -237,6 +242,11 @@ footer {
 .footer-text {
   font-size: 1.4rem;
   color: #1d1c30;
+}
+
+.modal-image {
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 @media (min-width: 992px) {

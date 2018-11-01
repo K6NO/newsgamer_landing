@@ -351,12 +351,18 @@ footer {
   .navbar-nav {
     background: #ffffffbb;
     color: #DB4B4F;
-    width: 100%;
-    margin-right: -1rem;
+    width: 100%; 
     z-index: 100;
+  }
+  .collapsing {
+    margin-right: -2.5rem;
+  }
+  .show {
+    margin-right: -2.5rem;
   }
   .navbar-collapse {
     z-index: 999992;
+  
   }
   .navbar-dark .navbar-nav .nav-link {
     color: #DB4B4F;

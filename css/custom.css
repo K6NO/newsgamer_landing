@@ -1,5 +1,6 @@
 /* colors
 coral: #ff5458
+dark-coral: #DB4B4F;
 white: #fff
 red: #da1f26
 yellow: #ee8b49
@@ -65,7 +66,7 @@ section {
 }
 
 .bg-coral {
-  background-color: #ff5458;
+  background-color: #DB4B4F;
 }
 
 nav {
@@ -113,7 +114,7 @@ nav {
 }
 
 .learn-more {
-  background: #ff5458;
+  background: #DB4B4F;
   border: 1px solid #fff;
   color: #fff;
   padding: 1rem 4rem;
@@ -127,15 +128,15 @@ nav {
 
 .learn-more:hover {
   background: #fff;
-  color: #ff5458;
-  border: 1px solid #ff5458;
+  color: #DB4B4F;
+  border: 1px solid #DB4B4F;
   text-decoration: none;
 }
 
 .sign-up {
   background: #fff;
   border: 1px solid #fff;
-  color: #ff5458;
+  color: #DB4B4F;
   padding: 1rem 4rem;
   font-family: 'Rajdhani', sans-serif;
   font-size: 2rem;
@@ -146,7 +147,7 @@ nav {
 }
 
 .sign-up:hover {
-  background: #ff5458;
+  background: #DB4B4F;
   color: #fff;
   text-decoration: none;
 }
@@ -154,10 +155,8 @@ nav {
 .size-images {
   display: block;
   margin: 0 auto;
-  max-width: 400px;
   width: 100%;
   height: auto;
-  
 }
 
 .size-images-editor {
@@ -191,7 +190,7 @@ nav {
 }
 
 .coral-text {
-  color: #ff5458;
+  color: #DB4B4F;
 }
 
 .subscribe-box {
@@ -213,21 +212,100 @@ nav {
 
 
 .subscribe-button {
-  background: #ff5458;
+  display: block;
+  margin: 0 auto;
+  background: #DB4B4F;
   border: 1px solid #fff;
   color: #fff;
   padding: 1rem 4rem;
   margin-bottom: 2rem;
 }
 
+.subscribe-button[disabled] {
+  background: #DB4B4F77;
+}
+
 .subscribe-input {
   min-width: 250px;
-  max-width: 300px;
+  width: 60%;
   height: 5rem;
   margin: 2rem 1rem;
   border: 1px solid #929292;
   color: #929292;
   padding-left: 1rem;
+}
+
+/* Customize the label (the container) */
+.subscribe-container {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.subscribe-container input {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  cursor: pointer;
+}
+.subscribe-container span {
+  padding-left: 3rem;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.subscribe-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.subscribe-container input:checked ~ .checkmark {
+  background-color: #DB4B4F;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.subscribe-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.subscribe-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.privacy-link {
+  color: #1d1c30;
 }
 
 footer {
@@ -253,6 +331,9 @@ footer {
   .container {
       max-width: 1060px;
   }
+  .one {
+    margin-top: 5rem;
+  }
 }
 @media(max-width: 768px) {
   nav {
@@ -268,24 +349,32 @@ footer {
     width: auto;
   }
   .navbar-nav {
-    background: #fff;
-    color: #ff5458;
-    width: 60%;
+    background: #ffffffbb;
+    color: #DB4B4F;
+    width: 100%;
     margin-right: -1rem;
+    z-index: 100;
+  }
+  .navbar-collapse {
+    z-index: 999992;
   }
   .navbar-dark .navbar-nav .nav-link {
-    color: #ff5458;
-    text-align: right;  
+    color: #DB4B4F;
+    text-align: right;
+    z-index: 100;
   }
   .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, .8)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
-  
   .custom-toggler.navbar-toggler {
     border-color: rgb(255,255,255);
-  } 
+  }
+  .navbar-subscribe {
+    padding-left: 0;
+    border: none;
+  }
   .jumbo {
-    background: #ff5458;
+    background: #DB4B4F;
     text-align: center;
     margin-bottom: 0;
   }
@@ -309,6 +398,9 @@ footer {
     display: block;
     margin-bottom: 2rem;
   }
+  .section-title {
+    margin-top: 3rem;
+  }
   .section-description {
     max-width: 100%;
     padding: 0 1.5rem;
@@ -319,9 +411,17 @@ footer {
   .two {
     order: 1;
   }
+  .last-image {
+    margin: -4rem 0;
+    margin-bottom: 0;
+  }
   .subscribe-input {
     text-align: center;
     padding-left: 0;
+  }
+  .size-images {
+    margin-bottom: 1rem;
+    max-width: 400px;
   }
   .team-holder {
     padding: 0;

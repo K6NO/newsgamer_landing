@@ -133,6 +133,19 @@ nav {
   text-decoration: none;
 }
 
+.contactIcon {
+  color: #1a7eb8;
+  font-size: 3rem;
+  margin-right: 1.5rem;
+}
+
+.contactIcon:hover {
+  color: #05466b;
+  font-size: 3rem;
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+
 .sign-up {
   background: #fff;
   border: 1px solid #fff;
@@ -335,7 +348,7 @@ footer {
     margin-top: 5rem;
   }
 }
-@media(max-width: 768px) {
+@media(max-width: 767px) {
   nav {
     height: 40px;
   }
@@ -349,9 +362,13 @@ footer {
     width: auto;
   }
   .navbar-nav {
-    background: #ffffffbb;
-    color: #DB4B4F;
-    width: 100%; 
+    max-width: 400px;
+    background: #DB4B4F;
+    color: #ffffff;
+    width: 100%;
+    z-index: 100;
+    border-left: 0;
+    border-radius: 10px;
     z-index: 100;
   }
   .collapsing {
@@ -362,10 +379,19 @@ footer {
   }
   .navbar-collapse {
     z-index: 999992;
-  
   }
-  .navbar-dark .navbar-nav .nav-link {
-    color: #DB4B4F;
+  .nav-item {
+    border-top: 0px solid #ffffff;
+    border-bottom: 2.5px solid #ffffff;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    background: #db4b4f;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  .nav-link {
+    color: #ffffff;
+    padding-top: 1.5rem;
     text-align: right;
     z-index: 100;
   }
@@ -377,7 +403,7 @@ footer {
   }
   .navbar-subscribe {
     padding-left: 0;
-    border: none;
+    
   }
   .jumbo {
     background: #DB4B4F;
@@ -446,5 +472,4 @@ footer {
   .footer-logo-ng {
     display: none;
   }
-
 }

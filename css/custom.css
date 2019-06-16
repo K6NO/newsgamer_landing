@@ -69,6 +69,10 @@ section {
   background-color: #DB4B4F;
 }
 
+.white-bg{
+  background:#ffffff !important;
+}
+
 nav {
   height: 80px;
 }
@@ -134,16 +138,15 @@ nav {
 }
 
 .contactIcon {
-  color: #1a7eb8;
+  color: #ff5458;
   font-size: 3rem;
-  margin-right: 1.5rem;
+  margin: 0 1.5rem;
+  transition: color 0.2s ease-out;
 }
 
 .contactIcon:hover {
-  color: #05466b;
-  font-size: 3rem;
   text-decoration: none;
-  margin-right: 1.5rem;
+  color: #DB4B4F;
 }
 
 .sign-up {
@@ -184,17 +187,17 @@ nav {
   max-width: 90%;
 }
 
-.team-card {
-  background-color: #fff;
-  margin: 5rem 1rem;
-  padding: 5rem;
-}
 
 .team-card > h2 {
   font-weight: 400;
 }
 .team-card > p {
   padding: 2rem 0;
+}
+.profile-pic {
+  max-width: 100px;
+  height: auto;
+  border-radius: .75rem;
 }
 
 .team-card > a > img {
@@ -204,6 +207,36 @@ nav {
 
 .coral-text {
   color: #DB4B4F;
+  margin-bottom: 6rem;
+}
+
+/* Advisors part */
+.advisorsHeading {
+  color: #383d46;
+  font-weight: 700;
+}
+.bio-card {
+  border-left: 1px solid #ff5458bb;
+  border-right: 1px dotted #ff5458bb;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+
+}
+.bio-button {
+  font-size: 2rem;
+  color: #ff5458!important; 
+  transition: color 0.2s ease-out;
+  text-transform: lowercase;
+}
+
+.bio-button:hover {
+  text-decoration: none;
+  color: #DB4B4F;
+}
+.bio-text {
+  font-size: 1.5rem;
 }
 
 .subscribe-box {
@@ -215,6 +248,23 @@ nav {
   padding-top: 6rem;
   color: #383d46;
   font-size: 6rem;
+}
+
+.duotoneFilters {
+  height: 0;
+  left: -9999em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.advisorImage {
+   filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
 }
 
 .subscribe-box > h3 {
@@ -362,9 +412,9 @@ footer {
   nav {
     height: 40px;
   }
-  div{
+  /* div{
     text-align: center;
-  }
+  } */
   .navbar-brand > img {
     margin-top: 1rem;
     padding: .5rem;
@@ -465,13 +515,12 @@ footer {
     margin-bottom: 1rem;
     max-width: 400px;
   }
-  .team-holder {
+  /* .team-holder {
     padding: 0;
-  }
-  .team-card {
-    margin: 1rem auto;
+  } */
+  /* .team-card {
     padding: 3rem;
-  }
+  } */
   .team-title {
     margin-top: 2rem;
   }
